@@ -28,4 +28,8 @@ describe 'sysctl::values' do
       it_behaves_like 'sysctl::values'
     end
   end
+
+  context 'does not fail with no args params' do
+    it { is_expected.to compile.with_all_deps }
+  end
 end
